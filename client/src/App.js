@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import axios from 'axios'
 import DefaultImg from './assets/placeholder.png'
 import { storage } from './firebase-config.js'
