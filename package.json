@@ -1,0 +1,25 @@
+{
+  "name": "upload-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node app",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Long Yin",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^4.1.1",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.7"
+  },
+  "engines": {
+    "node": "10.16.0"
+  }
+}
